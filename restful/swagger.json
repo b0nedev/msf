@@ -1,0 +1,32 @@
+{
+  "swagger": "2.0.0",
+  "info": {
+    "title": "Motion-shadow-fit",
+    "version": "0.0.1",
+    "description": "Restful API Server"
+  },
+  "securityDefinitions": {
+    "client": {
+      "type": "apiKey",
+      "name": "client",
+      "in": "header"
+    },
+    "access_token": {
+      "type": "apiKey",
+      "name": "access-token",
+      "in": "header"
+    },
+    "jwt": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "Authorization"
+    }
+  },
+  "security": [
+    {
+      "jwt": []
+    }
+  ],
+  "host": "localhost:3000",
+  "basePath": "/"
+}

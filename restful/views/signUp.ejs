@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous">
+    </script>
+    <script src="/semantic/dist/semantic.min.js"></script>
+    <script type="text/javascript" src="/javascripts/script.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <form class="signUn" action="/users/signUp" method="post">
+      <label for="email">email: </label>
+      <input type="email" name="userId"><br>
+      <label for="code">confirmation code: </label>
+      <input type="text" name="code"><br>
+      <label for="password">Password: </label>
+      <input type="password" name="password"><br>
+      <label for="rePassword">Re-Password: </label>
+      <input type="password" name="rePassword"><br>
+      <input type="radio" name="term"><br>
+      <input class="ui button" type="submit" value="Button">
+    </form>
+  </body>
+</html>

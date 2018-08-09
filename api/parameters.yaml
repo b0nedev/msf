@@ -1,0 +1,39 @@
+
+/**
+  * @swagger
+  * tags:
+  *   name: notice
+  *   description: notice management
+  * definitions:
+  *   Todo:
+  *     type: object
+  *     required:
+  *       - notice_id
+  *       - user_id
+  *     properties:
+  *       notice_id:
+  *         type: string
+  *         description: order
+*/
+
+/**
+ *  @swagger
+ *  /todo:
+ *    get:
+ *      summary: Returns Todo lists
+ *      tags: [Todo]
+ *      response:
+ *        200:
+ *          description: todo list
+ *          schema:
+ *            type: object
+ *            properties:
+ *              todos:
+ *                type: array
+ *                items:
+ *                  $ref: '#/definitions/Todo'
+ *
+*/
+router.get('/', (req, res, next) => {
+ 
+})
